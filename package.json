@@ -15,13 +15,16 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
+    "iview": "^3.1.5",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "nodemon": "^1.11.0"
   }
 }

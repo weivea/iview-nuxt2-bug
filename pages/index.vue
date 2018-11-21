@@ -5,6 +5,13 @@
       <h1 class="title">
         demo
       </h1>
+      <Card 
+        class="msg_card">
+        <p slot="title">Commit Message: </p>
+        <p class="commit_msg">
+          阿斯顿黑发晶打发打发
+        </p>
+      </Card>
       <h2 class="subtitle">
         My spectacular Nuxt.js project
       </h2>
@@ -23,17 +30,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/Logo.vue';
 
 export default {
   components: {
     Logo
   }
-}
+};
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;

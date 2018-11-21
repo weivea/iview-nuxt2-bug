@@ -1,7 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'spa',
+  // mode: 'spa',
 
   /*
   ** Headers of the page
@@ -33,6 +33,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/iview.js' }
   ],
 
   /*
@@ -48,7 +49,7 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  extractCSS: true,
   /*
   ** Build configuration
   */
@@ -66,6 +67,9 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      config.module.rules[4].oneOf[0].use[3].options.javascriptEnabled = true;
+      config.module.rules[4].oneOf[1].use[3].options.javascriptEnabled = true;
+      console.log(JSON.stringify(config.module, null, 2));
     }
   }
 }
